@@ -13,7 +13,7 @@ const port = 3000
 app.use(cors())
 
 // Configure Multer for file uploads (save to disk)
-const storage = multer.
+const storage = multer.memoryStorage()
 
 const upload = multer({ storage: storage })
 
